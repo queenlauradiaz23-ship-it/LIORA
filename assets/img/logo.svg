@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373.1 103" style="enable-background:new 0 0 373.1 103;">
+
+  <!-- Simple Green Flower -->
+  <g transform="translate(318, 51.5)">
+    <!-- Petals -->
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(0)"/>
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(45)"/>
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(90)"/>
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(135)"/>
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(180)"/>
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(225)"/>
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(270)"/>
+    <ellipse cx="0" cy="-16" rx="5.5" ry="11" fill="#098178" opacity="0.85" transform="rotate(315)"/>
+    <!-- Centre -->
+    <circle cx="0" cy="0" r="7" fill="#065f5a"/>
+    <circle cx="0" cy="0" r="4" fill="#0ab5a8"/>
+  </g>
+
+  <!-- LIORA text -->
+  <text
+    x="30"
+    y="72"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="68"
+    font-weight="400"
+    letter-spacing="12"
+    fill="#1A1A1A"
+  >LIORA</text>
+
+</svg>

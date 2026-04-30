@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="assets/css/swiper.css"
+    />
+
+    <!--=============== SEARCH CSS ===============-->
+    <link rel="stylesheet" href="assets/css/search.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+
+    
+
+    <title>Liora — Login / Register</title>
+  </head>
+  <body>
+    <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+
+        <ul class="nav__list custom-nav">
+
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+
+
+
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother’s Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+
+
+        <li class="nav__item search-center">
+  <div class="header__search custom-search">
+    <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+    <button class="search__btn">
+      <img src="assets/img/search.svg" alt="search icon" />
+    </button>
+
+    <div id="search-history" class="search-history-box"></div>  <!-- ✅ ADD THIS -->
+  </div>
+</li>
+
+
+
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">New Year</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+
+              <!-- Cute Menu Dropdown -->
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+
+          <!-- Beautiful dropdown list -->
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <div class="cart__header cart__header-box container">
+      <h2 class="section__title">
+        <span>Login</span> Register 🌸
+      </h2>
+      <p class="delivery__order">Register to save your details </p>
+    </div>
+
+      <!--=============== LOGIN-REGISTER ===============-->
+      <section class="login-register section--lg">
+  <div class="auth-container">
+    
+    <!-- LEFT SIDE -->
+    <div class="auth-box">
+      <h2>Welcome Back 🌸</h2>
+      <p class="auth-subtitle">Log in to continue your flower journey</p>
+
+      <form class="form">
+        <input type="email" placeholder="Email address" class="auth-input" />
+        <input type="password" placeholder="Password" class="auth-input" />
+
+        <button class="auth-btn">Login 💖</button>
+      </form>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="auth-box">
+      <h2>Create Account ✨</h2>
+      <p class="auth-subtitle">Join Liora and spread love 🌷</p>
+
+      <form class="form">
+        <input type="text" placeholder="Username" class="auth-input" />
+        <input type="email" placeholder="Email address" class="auth-input" />
+        <input type="password" placeholder="Password" class="auth-input" />
+        <input type="password" placeholder="Confirm Password" class="auth-input" />
+
+        <button class="auth-btn">Register 🌼</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+    </main>
+
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper.js"></script>
+
+    <!--=============== SEARCH JS ===============-->
+    <script src="assets/js/search.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login-register.js"></script>
+     <!--=============== search ===============-->
+    <script src="assets/js/search.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper.css">
+
+  <!--=============== SEARCH CSS ===============-->
+  <link rel="stylesheet" href="assets/css/search.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  
+
+  <title>Liora — Your Beautiful Cart 🌸</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list custom-nav">
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother's Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+
+        <li class="nav__item search-center">
+  <div class="header__search custom-search">
+    <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+    <button class="search__btn">
+      <img src="assets/img/search.svg" alt="search icon" />
+    </button>
+
+    <div id="search-history" class="search-history-box"></div>  <!-- ✅ ADD THIS -->
+  </div>
+</li>
+
+          <li class="nav__item">
+            <a href="newyear.html" class="nav__link">New Year</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="occasions.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+          <span class="count" id="cart-count" style="display: none;">0</span>
+        </a>
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+
+    <!-- Cart Header -->
+    <div class="cart__header cart__header-box container">
+      <h2 class="section__title">
+        <span>Your</span> Shopping Cart 🌸
+      </h2>
+      <p class="delivery__order">Review your bouquets before checkout 🌷</p>
+    </div>
+
+    <!-- Empty Cart State -->
+    <div id="empty-cart-message" class="empty-cart-container container" style="display: none;">
+      <div class="empty-cart-illustration">
+        <div class="empty-cart-icon">🛒</div>
+      </div>
+      <h3>Your cart is blooming empty!</h3>
+      <p>Add some beautiful flowers to make someone's day special 💐</p>
+      <a href="flower.html" class="btn btn--lg">
+        <i class="fi-rs-shopping-bag"></i> Browse Flowers
+      </a>
+    </div>
+
+    <!-- Cart Content -->
+    <section class="cart section--lg container" id="cart-content">
+      <div class="cart-layout">
+
+        <!-- Left: Cart Items -->
+        <div class="cart-items-section">
+          <div class="table__container">
+
+            <div class="products__container grid" id="cart-items-container">
+              <!-- JS will render items -->
+            </div>
+          </div>
+
+          <!-- Cart Actions -->
+          <div class="cart__actions">
+            <button class="btn flex btn__md" onclick="updateCartQuantities()">
+              <i class="fi-rs-shuffle"></i> Update Cart
+            </button>
+            <button class="btn flex btn__md btn--outline" onclick="clearCart()">
+              <i class="fi-rs-trash"></i> Clear Cart
+            </button>
+            <a href="flower.html" class="btn flex btn__md btn--secondary">
+              <i class="fi-rs-shopping-bag"></i> Continue Shopping
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Summary & Offers -->
+        <div class="cart-sidebar">
+
+          <!-- Special Offer Banner -->
+          <div class="cart__offer">
+            <div class="offer-header">
+              <span class="offer-icon">🌸</span>
+              <h3>Special Flower Offers</h3>
+            </div>
+            <div class="offer-item">
+              <span class="offer-badge">10% OFF</span>
+              <p>Spend <strong>$50+</strong> and save 10%</p>
+            </div>
+            <div class="offer-item">
+              <span class="offer-badge free">FREE</span>
+              <p>Spend <strong>$75+</strong> for free delivery</p>
+            </div>
+            <div class="coupon-code">
+              <span>Use code: <strong>LOVE10</strong></span>
+            </div>
+          </div>
+
+          <!-- Coupon Section -->
+          <div class="cart__coupon sidebar-coupon">
+            <h3 class="section__title">🎁 Apply Coupon</h3>
+            <div class="coupon__form form">
+              <div class="form__group">
+                <input type="text" class="form__input" id="coupon-input" placeholder="Enter coupon code" />
+                <button class="btn btn--sm" type="button" onclick="applyCoupon()">
+                  <i class="fi-rs-label"></i> Apply
+                </button>
+              </div>
+              <p id="coupon-message" class="coupon-message"></p>
+            </div>
+          </div>
+
+          <!-- Cart Totals -->
+          <div class="cart__total sidebar-total">
+            <h3 class="section__title">💐 Cart Summary</h3>
+            <table class="cart__total-table">
+              <tr>
+                <td><span class="cart__total-title">Subtotal</span></td>
+                <td><span class="cart__total-price" id="summary-subtotal">$0.00</span></td>
+              </tr>
+              <tr id="discount-row" style="display: none;">
+                <td><span class="cart__total-title discount">Discount</span></td>
+                <td><span class="cart__total-price discount" id="summary-discount">-$0.00</span></td>
+              </tr>
+              <tr>
+                <td><span class="cart__total-title">Shipping</span></td>
+                <td><span class="cart__total-price" id="summary-shipping">$0.00</span></td>
+              </tr>
+              <tr>
+                <td><span class="cart__total-title">Reward Points</span></td>
+                <td><span class="cart__summary-value" id="summary-rewards">-$0.00</span></td>
+              </tr>
+              <tr class="total-row">
+                <td><span class="cart__total-title">Total</span></td>
+                <td><span class="cart__total-price grand-total" id="summary-total">$0.00</span></td>
+              </tr>
+            </table>
+
+            <!-- Progress Bar for Free Shipping -->
+            <div class="shipping-progress" id="shipping-progress">
+              <p class="progress-text" id="progress-text">Add $75 more for FREE shipping! 🚚</p>
+              <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <a href="checkout.html" class="btn flex btn--md btn--checkout" onclick="return proceedToCheckout(event)">
+              <i class="fi fi-rs-box-alt"></i> Proceed To Checkout
+            </a>
+
+            <div class="secure-checkout">
+              <span>🔒 Secure Checkout</span>
+              <small>SSL Encrypted & Protected</small>
+            </div>
+          </div>
+
+          <!-- Need Help -->
+          <div class="cart-help">
+            <h4>Need Help? 💬</h4>
+            <p>Our florists are here to assist you</p>
+            <a href="chatbot.html" class="help-link">
+              <i class="fi-rs-comment"></i> Chat with AI Assistant
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notifications -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper.js"></script>
+
+
+  <!--=============== CART JS ===============-->
+  <script src="assets/js/cart.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+   <!--=============== search ===============-->
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>
+

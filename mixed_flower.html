@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper.css">
+
+  <!--=============== SEARCH CSS ===============-->
+  <link rel="stylesheet" href="assets/css/search.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  
+
+  <title>Liora — Mixed Flower Bouquets</title>
+</head>
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+
+        <ul class="nav__list custom-nav">
+
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother's Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+
+       <li class="nav__item search-center">
+  <div class="header__search custom-search">
+    <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+    <button class="search__btn">
+      <img src="assets/img/search.svg" alt="search icon" />
+    </button>
+
+    <div id="search-history" class="search-history-box"></div>  <!-- ✅ ADD THIS -->
+  </div>
+</li>
+
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">New Year</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+
+        <!-- Cute Menu Dropdown -->
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== FLOWER TABS BAR ===============-->
+    <div class="flower-tabs-bar">
+      <div class="tab__btns flower-types-menu">
+        <a href="rose.html" class="tab__btn">Roses</a>
+        <a href="tulip.html" class="tab__btn">Tulips</a>
+        <a href="lily.html" class="tab__btn">Lilies</a>
+        <a href="orchids.html" class="tab__btn">Orchids</a>
+        <a href="sunflower.html" class="tab__btn">Sunflowers</a>
+        <a href="mixed_flower.html" class="tab__btn active-tab">Mixed Bouquets</a>
+        <a href="buttercup.html" class="tab__btn">Buttercup</a>
+        <a href="daisies.html" class="tab__btn">Daisies</a>
+        <a href="minirose.html" class="tab__btn">Mini Rose</a>
+        <a href="daffodils.html" class="tab__btn">Daffodils</a>
+       
+      </div>
+    </div>
+
+    <!--=============== MIXED BOUQUETS COLLECTION ===============-->
+    <section class="products container section--lg" style="padding-top: 1.5rem;">
+      <div class="section__header">
+        <h2 class="section__title"><span>Mixed</span> Bouquets</h2>
+      </div>
+
+      <div class="products__container grid">
+
+        <!-- Product 1 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-pink-garden" class="product__images">
+              <img src="assets/img/items/mixed/mixed_1.jpg" alt="Pink Garden Delight" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_1.jpg" alt="Pink Garden Delight hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-pink-garden"><h3 class="product__title">Pink Garden Delight</h3>
+              <p class="product__subtitle">بوکێتی باخچەی پینکی</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$38</span>
+              <span class="old__price">$48</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-sweet-blossom" class="product__images">
+              <img src="assets/img/items/mixed/mixed_2.jpg" alt="Sweet Blossom Dream" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_2.jpg" alt="Sweet Blossom Dream hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-orange">New</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-sweet-blossom"><h3 class="product__title">Sweet Blossom Dream</h3>
+              <p class="product__subtitle">خەونی گوڵی شیرین</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$42</span>
+              <span class="old__price">$52</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-white-daisy" class="product__images">
+              <img src="assets/img/items/mixed/mixed_3.jpg" alt="White Daisy Charm" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_3.jpg" alt="White Daisy Charm hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Premium</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-white-daisy"><h3 class="product__title">White Daisy Charm</h3>
+              <p class="product__subtitle">جوانی دەیزی سپی</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$45</span>
+              <span class="old__price">$56</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-soft-pastel" class="product__images">
+              <img src="assets/img/items/mixed/mixed_6.jpg" alt="Soft Pastel Love" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_6.jpg" alt="Soft Pastel Love hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-orange">New</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-soft-pastel"><h3 class="product__title">Soft Pastel Love</h3>
+              <p class="product__subtitle">خۆشەویستی پاستێلی نەرم</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$44</span>
+              <span class="old__price">$54</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-lavender-whisper" class="product__images">
+              <img src="assets/img/items/mixed/mixed_7.jpg" alt="Lavender Whisper" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_7.jpg" alt="Lavender Whisper hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-green">-20%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-lavender-whisper"><h3 class="product__title">Lavender Whisper</h3>
+              <p class="product__subtitle">نسیمی لاڤەندەر</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$36</span>
+              <span class="old__price">$46</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-spring-morning" class="product__images">
+              <img src="assets/img/items/mixed/mixed_8.jpg" alt="Spring Morning Glow" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_8.jpg" alt="Spring Morning Glow hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Premium</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-spring-morning"><h3 class="product__title">Spring Morning Glow</h3>
+              <p class="product__subtitle">ڕوناکی بەیانی بەهار</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$48</span>
+              <span class="old__price">$60</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-blush-blossom" class="product__images">
+              <img src="assets/img/items/mixed/mixed_9.jpg" alt="Blush Blossom Fantasy" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_9.jpg" alt="Blush Blossom Fantasy hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-blush-blossom"><h3 class="product__title">Blush Blossom Fantasy</h3>
+              <p class="product__subtitle">فانتازیای بلاش بلۆسم</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$50</span>
+              <span class="old__price">$62</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=mixed-white-elegance" class="product__images">
+              <img src="assets/img/items/mixed/mixed_10.jpg" alt="White Elegance Bouquet" class="product__img default" />
+              <img src="assets/img/items/mixed/mixed_10.jpg" alt="White Elegance Bouquet hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-orange">New</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Mixed</span>
+            <a href="details.html?id=mixed-white-elegance"><h3 class="product__title">White Elegance Bouquet</h3>
+              <p class="product__subtitle">بوکێتی سپی جوان</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$47</span>
+              <span class="old__price">$57</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper.js"></script>
+  <!--=============== SEARCH JS ===============-->
+  <script src="assets/js/search.js"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

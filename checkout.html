@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper.css">
+
+  <!--=============== SEARCH CSS ===============-->
+  <link rel="stylesheet" href="assets/css/search.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+
+  <title>Liora — Checkout</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+
+        <ul class="nav__list custom-nav">
+
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+
+
+
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother’s Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+
+<li class="nav__item search-center">
+  <div class="header__search custom-search">
+    <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+    <button class="search__btn">
+      <img src="assets/img/search.svg" alt="search icon" />
+    </button>
+
+    <div id="search-history" class="search-history-box"></div>  <!-- ✅ ADD THIS -->
+  </div>
+</li>
+
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">New Year</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+
+        <!-- Cute Menu Dropdown -->
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+
+          <!-- Beautiful dropdown list -->
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+
+
+    <!--=============== CHECKOUT ===============-->
+    <section class="checkout section">
+      <div class="checkout__header checkout__header-box container">
+        <h2 class="section__title">
+          <span>Secure</span> Checkout
+        </h2>
+        <p class="delivery__order">Complete your bouquet order safely 💳🌷</p>
+      </div>
+
+      <div class="checkout__container container grid">
+        <div class="checkout__group">
+          <h3 class="section__title">Billing Details</h3>
+          <form class="form grid">
+            <input type="text" placeholder="Full Name" class="form__input" />
+            <input type="text" placeholder="Address" class="form__input" />
+            <input type="text" placeholder="City" class="form__input" />
+            <input type="text" placeholder="Country" class="form__input" />
+            <input type="text" placeholder="Postcode" class="form__input" />
+            <input type="text" placeholder="Phone" class="form__input" />
+            <input type="email" placeholder="Email" class="form__input" />
+            <h3 class="checkout__title">Delivery Schedule</h3>
+            <input type="date" class="form__input" />
+            <input type="time" class="form__input" />
+
+            <h3 class="checkout__title">Gift Message</h3>
+            <textarea placeholder="Write your personal message 🌷" class="form__input textarea"></textarea>
+            <h3 class="checkout__title">Additional Information</h3>
+            <textarea placeholder="Order note" class="form__input textarea"></textarea>
+          </form>
+        </div>
+
+        <div class="checkout__group">
+          <h3 class="section__title">Cart Totals</h3>
+          <table class="order__table">
+            <thead>
+              <tr>
+                <td><span class="order__subtitle">Subtotal</span></td>
+                <td colspan="2"><span class="table__price" id="checkout-subtotal">$0.00</span></td>
+              </tr>
+
+              <tr>
+                <td><span class="order__subtitle">Reward Points</span></td>
+                <td colspan="2">
+<span class="table__price" id="checkout-rewards">-$0.00</span>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Products</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="checkout-items">
+<tr>
+  <td><span class="order__subtitle">Total</span></td>
+  <td colspan="2">
+    <span class="order__grand-total" id="checkout-total">$0.00</span>
+  </td>
+</tr>            </tbody>
+
+          </table>
+
+          <div class="payment__methods">
+            <h3 class="checkout__title payment__title">Payment</h3>
+
+            <div class="payment__option flex">
+              <input type="radio" name="radio" id="l1" checked class="payment__input" />
+              <label for="l1" class="payment__label">
+                Credit Card (Visa)
+              </label>
+            </div>
+
+            <div class="payment__option flex">
+              <input type="radio" name="radio" id="l2" class="payment__input" />
+              <label for="l2" class="payment__label">PayPal</label>
+            </div>
+          </div>
+
+          <button class="btn btn--md" type="button">
+            Place Order
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper.js"></script>
+
+  
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/checkout.js"></script>
+   <!--=============== search ===============-->
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>
+

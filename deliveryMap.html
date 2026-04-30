@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIORA — Locate My Delivery 🌷</title>
+
+  <!-- Flaticon -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles_delivery.css" />
+
+</head>
+<body class="delivery-page">
+
+  <!--=============== HEADER (EXACT SAME AS INDEX.HTML) ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list custom-nav">
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+          <li class="nav__item"><a href="flower.html" class="nav__link">Flowers</a></li>
+          <li class="nav__item"><a href="mother.html" class="nav__link">Mother's Day</a></li>
+          <li class="nav__item"><a href="birthday.html" class="nav__link">Birthday</a></li>
+          <li class="nav__item"><a href="birthday.html" class="nav__link">New Year</a></li>
+          <li class="nav__item"><a href="valentine.html" class="nav__link">Valentine</a></li>
+          <li class="nav__item"><a href="valentine.html" class="nav__link">Occasions</a></li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN CONTENT ===============-->
+  <main class="container section delivery-main">
+
+    <!-- Floating petals decoration -->
+    <div class="petals-bg" aria-hidden="true">
+      <span class="petal">🌸</span>
+      <span class="petal">🌷</span>
+      <span class="petal">🌸</span>
+      <span class="petal">🌹</span>
+      <span class="petal">🌸</span>
+    </div>
+
+    <!-- Order Header -->
+    <div class="delivery__header-card">
+      <div class="delivery__header-left">
+        <div class="order-badge">ORDER #LIORA-48291</div>
+        <h2 class="delivery__title">Track Your Bouquet 🌹</h2>
+        <p class="delivery__subtitle">Ruby Red Romance • 12 roses • Scheduled for <span id="original-date">3 May 2026</span></p>
+      </div>
+      <div class="delivery__header-right">
+        <div class="order-status-pill">
+          <span class="status-dot"></span> On the Way
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Steps -->
+    <div class="delivery__progress">
+      <div class="progress-steps">
+        <div class="step completed" data-step="1">
+          <div class="step-circle">✓</div>
+          <span>Order Placed</span>
+        </div>
+        <div class="step completed" data-step="2">
+          <div class="step-circle">✓</div>
+          <span>Packed</span>
+        </div>
+        <div class="step active" data-step="3">
+          <div class="step-circle">🚚</div>
+          <span>On the way</span>
+        </div>
+        <div class="step" data-step="4">
+          <div class="step-circle">🏠</div>
+          <span>Delivered</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ETA Strip -->
+    <div class="eta-strip">
+      <div class="eta-strip__icon truck-pulse">🚚</div>
+      <div class="eta-strip__info">
+        <div class="eta-strip__label">Estimated Arrival</div>
+        <div class="eta-strip__time" id="eta-time">Today • 14:45</div>
+        <div class="eta-strip__distance" id="distance">2.4km away</div>
+      </div>
+      <div class="eta-strip__countdown">
+        <div class="cd-block">
+          <span class="cd-num" id="hours">02</span>
+          <span class="cd-lbl">hrs</span>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block">
+          <span class="cd-num" id="minutes">38</span>
+          <span class="cd-lbl">min</span>
+        </div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block">
+          <span class="cd-num" id="seconds">00</span>
+          <span class="cd-lbl">sec</span>
+        </div>
+      </div>
+      <button onclick="liveTrack()" class="map-btn live-btn" id="live-track-btn">
+        <span class="live-dot"></span> Live Track
+      </button>
+    </div>
+
+    <!-- REAL INTERACTIVE MAP -->
+    <div class="map-container">
+      <div id="map"></div>
+      <div class="map-overlay-badge">
+        <span class="live-dot"></span> Live Tracking
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button onclick="showRescheduleModal()" class="option-btn--reschedule">
+        📅 Reschedule Delivery
+      </button>
+      <button onclick="showCallDriverModal()" class="option-btn--call">
+        📞 Call Driver
+      </button>
+      <button onclick="showCancelModal()" class="option-btn--cancel">
+        ❌ Cancel Order
+      </button>
+    </div>
+
+    <!-- Delivery Info Cards -->
+    <div class="delivery__info">
+      <div class="delivery-info-card">
+        <div class="info-card__icon">📍</div>
+        <div>
+          <div class="info-card__title">Current Location</div>
+          <div class="info-card__value" id="current-location">Near Central Flower Market</div>
+          <small style="color:#b085a0;">Updated just now</small>
+        </div>
+      </div>
+      <div class="delivery-info-card">
+        <div class="info-card__icon">🚚</div>
+        <div>
+          <div class="info-card__title">Driver</div>
+          <div class="info-card__value">Sara • +750 899 0555</div>
+          <small style="color:#4caf50;">🟢 Online now</small>
+        </div>
+      </div>
+      <div class="delivery-info-card">
+        <div class="info-card__icon">📦</div>
+        <div>
+          <div class="info-card__title">Package</div>
+          <div class="info-card__value">Ruby Red Romance</div>
+          <small style="color:#b085a0;">Handle with care 🌹</small>
+        </div>
+      </div>
+      
+    </div>
+
+  </main>
+
+  <!-- =============== RESCHEDULE MODAL =============== -->
+  <div id="reschedule-modal" class="liora-modal" role="dialog" aria-modal="true">
+    <div class="liora-modal__backdrop" onclick="hideModals()"></div>
+    <div class="liora-modal__box">
+      <button class="modal-close-btn" onclick="hideModals()">✕</button>
+      <div class="modal-icon">📅</div>
+      <h3>Reschedule Delivery</h3>
+      <p>Choose a new delivery date — we'll make it work!</p>
+      <div class="reschedule-dates" id="date-options"></div>
+      <div class="liora-modal__actions">
+        <button onclick="hideModals()" class="modal-btn--keep">Keep Original</button>
+        <button onclick="confirmReschedule()" class="modal-btn--confirm">Confirm Date ✓</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== CALL DRIVER MODAL =============== -->
+  <div id="call-modal" class="liora-modal" role="dialog" aria-modal="true">
+    <div class="liora-modal__backdrop" onclick="hideModals()"></div>
+    <div class="liora-modal__box">
+      <button class="modal-close-btn" onclick="hideModals()">✕</button>
+      <div class="modal-icon">📞</div>
+      <h3>Contact Your Driver</h3>
+      <p>Sara is currently delivering your flowers 🌷</p>
+      <div class="driver-card">
+        <div class="driver-avatar">🚚</div>
+        <div class="driver-details">
+          <div class="driver-name">Sara</div>
+          <div class="driver-phone">+750 899 0555</div>
+          <div class="driver-status"><span style="color:#4caf50;">●</span> Online • 2.4km away</div>
+        </div>
+      </div>
+      <div class="liora-modal__actions">
+        <button onclick="hideModals()" class="modal-btn--keep">Close</button>
+        <a href="tel:+7508990555" class="modal-btn--confirm" style="text-decoration:none; display:flex; align-items:center; justify-content:center; gap:0.4rem;" target="_self">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== CANCEL MODAL =============== -->
+  <div id="cancel-modal" class="liora-modal" role="dialog" aria-modal="true">
+    <div class="liora-modal__backdrop" onclick="hideModals()"></div>
+    <div class="liora-modal__box">
+      <button class="modal-close-btn" onclick="hideModals()">✕</button>
+      <div class="modal-icon">❌</div>
+      <h3>Cancel Order?</h3>
+      <p style="color:#c0392b;">Are you sure? Your flowers are already on the way!</p>
+      <p style="font-size:0.9rem; color:#9c6f81; margin-top:0.5rem;">A full refund will be processed in 3–5 business days.</p>
+      <div class="liora-modal__actions">
+        <button onclick="hideModals()" class="modal-btn--keep">No, Keep Order 🌹</button>
+        <button onclick="confirmCancel()" class="modal-btn--cancel-confirm">Yes, Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== TOAST NOTIFICATION =============== -->
+  <div id="toast" class="delivery-notification" style="display:none;" role="alert">
+    <span class="notif-icon" id="toast-icon">🌷</span>
+    <div class="notif-text" id="toast-text"></div>
+    <button class="toast-close" onclick="closeToast()">✕</button>
+  </div>
+
+  <script src="assets/js/deliveryMap.js"></script>
+</body>
+</html>

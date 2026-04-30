@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== PAGE TITLE ===============-->
+  <title>🌷 Liora — My Account</title>
+  <meta name="description" content="Manage your orders, reward points, addresses & profile at Liora Floral Boutique 💖">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="icon" href="./assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/img/logo.svg">
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper.css" />
+
+  <!--=============== SEARCH CSS ===============-->
+  <link rel="stylesheet" href="assets/css/search.css" />
+
+  <!--=============== MAIN STYLES ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+
+        <ul class="nav__list custom-nav">
+
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+
+
+
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother's Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+
+          <li class="nav__item search-center">
+            <div class="header__search custom-search">
+              <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+              <button class="search__btn">
+                <img src="assets/img/search.svg" alt="search icon" />
+              </button>
+
+              <div id="search-history" class="search-history-box"></div> 
+            </div>
+          </li>
+
+
+
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">New Year</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+
+        <!-- Cute Menu Dropdown -->
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+
+          <!-- Beautiful dropdown list -->
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html#reward-points">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <div class="cart__header cart__header-box container">
+      <h2 class="section__title">
+        <span>My</span> Account 🌸
+      </h2>
+      <p class="delivery__order">check your account details and preferences</p>
+    </div>
+
+    <!--=============== ACCOUNTS ===============-->
+    <section class="accounts section--lg">
+
+
+      <div class="accounts__container container grid">
+        <div class="account__tabs">
+          <p class="account__tab active-tab" data-target="#dashboard">
+            <i class="fi fi-rs-settings-sliders"></i> Dashboard
+          </p>
+          <p class="account__tab" data-target="#orders">
+            <i class="fi fi-rs-shopping-bag"></i> Orders
+          </p>
+          <p class="account__tab" data-target="#reward-points">
+            <i class="fi fi-rs-gift"></i> Reward Points
+          </p>
+          <p class="account__tab" data-target="#update-profile">
+            <i class="fi fi-rs-user"></i> Update Profile
+          </p>
+          <p class="account__tab" data-target="#address">
+            <i class="fi fi-rs-marker"></i> My Address
+          </p>
+          <p class="account__tab" data-target="#change-password">
+            <i class="fi fi-rs-settings-sliders"></i> Change Password
+          </p>
+          <p class="account__tab">
+            <i class="fi fi-rs-exit"></i> Logout
+          </p>
+        </div>
+
+        <div class="tabs__content">
+          <div class="tab__content active-tab" content id="dashboard">
+            <h3 class="tab__header">Hello Rosie</h3>
+            <div class="tab__body">
+              <p class="tab__description">
+                From your account dashboard, you can easily check and view your
+                recent orders, manage your shipping and billing addresses,
+                save special calendar dates, track your reward points, and edit
+                your password and account details.
+              </p>
+            </div>
+          </div>
+
+          <div class="tab__content" content id="orders">
+            <h3 class="tab__header">Your Orders</h3>
+            <div class="tab__body">
+              <table class="placed__order-table">
+                <thead>
+                  <tr>
+                    <th>Orders</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Totals</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="orders-tbody">
+                  <tr data-order-id="1357">
+                    <td>#1357</td>
+                    <td>March 19, 2026</td>
+                    <td>Processing</td>
+                    <td>$125.00</td>
+                    <td>
+                      <a href="#" class="view__order">View</a>
+                      <button class="delete__order" title="Remove Order">
+                        <i class="fi fi-rs-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr data-order-id="2468">
+                    <td>#2468</td>
+                    <td>June 29, 2026</td>
+                    <td>Completed</td>
+                    <td>$364.00</td>
+                    <td>
+                      <a href="#" class="view__order">View</a>
+                      <button class="delete__order" title="Remove Order">
+                        <i class="fi fi-rs-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr data-order-id="2366">
+                    <td>#2366</td>
+                    <td>August 02, 2026</td>
+                    <td>Completed</td>
+                    <td>$280.00</td>
+                    <td>
+                      <a href="#" class="view__order">View</a>
+                      <button class="delete__order" title="Remove Order">
+                        <i class="fi fi-rs-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="no-orders" class="no-orders" style="display: none; text-align: center; padding: 40px 20px; color: #888;">
+                <p>No orders found 🌷</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__content" content id="reward-points">
+            <h3 class="tab__header">My Reward Points</h3>
+            <div class="tab__body">
+              <p class="tab__description" style="margin-bottom: 1rem;">
+                Collect Flower Points with every order and use them later for
+                discounts, special gifts, and exclusive bouquet offers.
+              </p>
+
+              <table class="placed__order-table">
+                <thead>
+                  <tr>
+                    <th>Current Points</th>
+                    <th>Reward Level</th>
+                    <th>Next Reward</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>120 Points</td>
+                    <td>Silver Bloom</td>
+                    <td>200 Points = 10% Discount</td>
+                    <td>Active</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div style="margin-top: 1rem;">
+                <a href="flower.html" class="btn btn--md">Earn More Points</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__content" content id="update-profile">
+            <h3 class="tab__header">Update Profile</h3>
+            <div class="tab__body">
+              <form class="form grid">
+                <div class="form__group grid">
+                  <input type="text" placeholder="First Name" class="form__input" />
+                  <input type="text" placeholder="Last Name" class="form__input" />
+                </div>
+                <input type="text" placeholder="Username" class="form__input" />
+                <input type="email" placeholder="Email Address" class="form__input" />
+                <div class="form__btn">
+                  <button class="btn btn--md">Save Changes</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="tab__content" content id="address">
+            <h3 class="tab__header">Shipping Address</h3>
+            <div class="tab__body">
+              <address class="address">
+                3522 Interstate <br />
+                75 Business Spur, <br />
+                Sault Ste. <br />
+                Marie, Mi 49783
+              </address>
+              <p class="city">New York</p>
+              <a href="#" class="edit">Edit</a>
+            </div>
+          </div>
+
+          <div class="tab__content" content id="change-password">
+            <h3 class="tab__header">Change Password</h3>
+            <div class="tab__body">
+              <form class="form grid">
+                <input type="password" placeholder="Current Password" class="form__input" />
+                <input type="password" placeholder="New Password" class="form__input" />
+                <input type="password" placeholder="Confirm Password" class="form__input" />
+                <div class="form__btn">
+                  <button class="btn btn--md">Save Password</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper.js"></script>
+
+  <!--=============== SEARCH JS ===============-->
+  <script src="assets/js/search.js"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/account.js"></script>
+  <!--=============== search ===============-->
+  <div id="login-popup" class="login-popup">
+
+    <div class="popup-box">
+      <h2>🌸 Oops!</h2>
+      <p>Please login first 💖</p>
+      <button id="go-login-btn">Go to Login</button>
+    </div>
+  </div>
+</body>
+
+</html>

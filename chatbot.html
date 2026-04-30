@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper.css">
+  <!--=============== SEARCH CSS ===============-->
+  <link rel="stylesheet" href="assets/css/search.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Liora — AI Florist Assistant</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+
+        <ul class="nav__list custom-nav">
+
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+
+
+
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother’s Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+
+<li class="nav__item search-center">
+  <div class="header__search custom-search">
+    <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+    <button class="search__btn">
+      <img src="assets/img/search.svg" alt="search icon" />
+    </button>
+
+    <div id="search-history" class="search-history-box"></div>  <!-- ✅ ADD THIS -->
+  </div>
+</li>
+
+
+
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">New Year</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+
+              <!-- Cute Menu Dropdown -->
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+
+          <!-- Beautiful dropdown list -->
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="chatbot-section container section">
+      <div class="chat-header">
+        <img src="assets/img/AI.JPG" alt="Liora AI Assistant" />
+        <h2>Hi, I'm Liora Assistant 🌷🤖</h2>
+        <p>Ask me anything about flowers, bouquets, or the perfect gift for any occasion!</p>
+      </div>
+
+      <div class="chat-container">
+        <div class="chat-window" id="chat-window">
+          <!-- Welcome message will be added by JS -->
+        </div>
+
+        <div class="chat-input-area">
+          <input type="text" id="user-input" class="chat-input" placeholder="Type your message here..." autocomplete="off" />
+          <button class="send-btn" id="send-btn">
+            <i class="fi fi-rs-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER (copy from index.html) ===============-->
+  <footer class="footer">
+   <section class="poster-section container section">
+  <div class="offer-banner tulip-banner">
+    <div class="offer-image">
+      <img src="assets/img/items/tulips/tulip_5.jpg" alt="Fresh Pink Tulips" class="poster-img">
+    </div>
+
+    <div class="offer-content">
+      <span class="offer-subtitle">Fresh Tulip Collection</span>
+      <h2 class="offer-title">Lavender Love Tulips</h2>
+      <p class="offer-text">
+        Brighten your day with our premium tulip bouquets. 
+        Perfect for spring celebrations, gifts, or simply bringing joy to your home.
+      </p>
+      <a href="tulip.html" class="btn">Shop Now</a>
+    </div>
+  </div>
+</section>
+       </footer>
+
+  <!--=============== SCRIPTS ===============-->
+  <script src="assets/js/swiper.js"></script>
+ 
+  <script src="assets/js/main.js"></script>
+  <!-- Chatbot JS will be in main.js or chatbot.js -->
+    <!--=============== search ===============-->
+    <script src="assets/js/search.js"></script>
+</body>
+</html>
+

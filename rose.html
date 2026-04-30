@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper.css">
+
+  <!--=============== SEARCH CSS ===============-->
+  <link rel="stylesheet" href="assets/css/search.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  
+
+  <title>Liora — Roses Collection</title>
+</head>
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list custom-nav">
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother's Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+       <li class="nav__item search-center">
+  <div class="header__search custom-search">
+    <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+    <button class="search__btn">
+      <img src="assets/img/search.svg" alt="search icon" />
+    </button>
+
+    <div id="search-history" class="search-history-box"></div>  <!-- ✅ ADD THIS -->
+  </div>
+</li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">New Year</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+
+        <!-- User Menu -->
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!-- Flower Tabs -->
+    <div class="flower-tabs-bar">
+      <div class="tab__btns flower-types-menu">
+        <a href="rose.html" class="tab__btn active-tab">Roses</a>
+        <a href="tulip.html" class="tab__btn">Tulips</a>
+        <a href="lily.html" class="tab__btn">Lilies</a>
+        <a href="orchids.html" class="tab__btn">Orchids</a>
+        <a href="sunflower.html" class="tab__btn">Sunflowers</a>
+        <a href="mixed_flower.html" class="tab__btn">Mixed Bouquets</a>
+        <a href="buttercup.html" class="tab__btn">Buttercup</a>
+        <a href="daisies.html" class="tab__btn">Daisies</a>
+        <a href="minirose.html" class="tab__btn">Mini Rose</a>
+        <a href="daffodils.html" class="tab__btn">Daffodils</a>
+       
+      </div>
+    </div>
+
+    <!-- Roses Collection -->
+    <section class="products container section--lg" style="padding-top: 1.5rem;">
+      <div class="section__header">
+        <h2 class="section__title"><span>Roses</span> Collection</h2>
+      </div>
+
+      <div class="products__container grid">
+
+        <!-- Product 1 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-blue-sapphire" class="product__images">
+              <img src="assets/img/items/roses/rose_1.jpg" alt="Blue Sapphire Roses" class="product__img default" />
+              <img src="assets/img/items/roses/rose_1.jpg" alt="Blue Sapphire Roses" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Premium</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-blue-sapphire"><h3 class="product__title">Blue Sapphire Roses</h3>
+              <p class="product__subtitle">گولی سەفیر شین</p></a>
+
+            <div class="product__price flex">
+              <span class="new__price">$42</span>
+              <span class="old__price">$50</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-rainbow-romance" class="product__images">
+              <img src="assets/img/items/roses/rose_2.jpg" alt="Rainbow Romance Roses" class="product__img default" />
+              <img src="assets/img/items/roses/rose_2.jpg" alt="Rainbow Romance Roses" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-orange">New</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-rainbow-romance"><h3 class="product__title">Rainbow Romance Roses</h3>
+              <p class="product__subtitle">گولی ڕەنگاو ڕۆمانس</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$48</span>
+              <span class="old__price">$55</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-golden-sunshine" class="product__images">
+              <img src="assets/img/items/roses/rose_3.jpg" alt="Golden Sunshine Roses" class="product__img default" />
+              <img src="assets/img/items/roses/rose_3.jpg" alt="Golden Sunshine Roses" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-green">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-golden-sunshine"><h3 class="product__title">Golden Sunshine Roses</h3>
+              <p class="product__subtitle">گولی زێڕینی خۆر</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$35</span>
+              <span class="old__price">$42</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-ruby-red" class="product__images">
+              <img src="assets/img/items/roses/rose_5.jpg" alt="Ruby Red Romance" class="product__img default" />
+              <img src="assets/img/items/roses/rose_5.jpg" alt="Ruby Red Romance" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">-15%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-ruby-red"><h3 class="product__title">Ruby Red Romance</h3>
+              <p class="product__subtitle">گولی ڕوبی سوور ڕۆمانس</p>
+            </a>
+
+            <div class="product__price flex">
+              <span class="new__price">$45</span>
+              <span class="old__price">$55</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-peach-paradise" class="product__images">
+              <img src="assets/img/items/roses/rose_6.jpg" alt="Peach Paradise Roses" class="product__img default" />
+              <img src="assets/img/items/roses/rose_6.jpg" alt="Peach Paradise Roses" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-orange">Premium</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-peach-paradise"><h3 class="product__title">Peach Paradise Roses</h3>
+              <p class="product__subtitle">گولی پێچ پارادایز</p></a>
+
+            <div class="product__price flex">
+              <span class="new__price">$38</span>
+              <span class="old__price">$45</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-blush-pink" class="product__images">
+              <img src="assets/img/items/roses/rose_7.jpg" alt="Blush Pink Dream" class="product__img default" />
+              <img src="assets/img/items/roses/rose_7.jpg" alt="Blush Pink Dream" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-blush-pink"><h3 class="product__title">Blush Pink Dream</h3>
+              <p class="product__subtitle">گولی پینکی بلاش درێم</p></a>
+
+            <div class="product__price flex">
+              <span class="new__price">$40</span>
+              <span class="old__price">$48</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-pure-white" class="product__images">
+              <img src="assets/img/items/roses/rose_9.jpg" alt="Pure White Elegance" class="product__img default" />
+              <img src="assets/img/items/roses/rose_9.jpg" alt="Pure White Elegance" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-blue">Premium</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-pure-white"><h3 class="product__title">Pure White Elegance</h3>
+              <p class="product__subtitle">گولی سپی پاک و جوان</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$52</span>
+              <span class="old__price">$60</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=rose-soft-pink" class="product__images">
+              <img src="assets/img/items/roses/rose_10.jpg" alt="Soft Pink Ribbon Roses" class="product__img default" />
+              <img src="assets/img/items/roses/rose_10.jpg" alt="Soft Pink Ribbon Roses" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-green">-20%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Roses</span>
+            <a href="details.html?id=rose-soft-pink"><h3 class="product__title">Soft Pink Ribbon Roses</h3>
+              <p class="product__subtitle">گولی پینکی نەرم و ڕیبۆن</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$36</span>
+              <span class="old__price">$45</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper.js"></script>
+  <!--=============== SEARCH JS ===============-->
+  <script src="assets/js/search.js"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

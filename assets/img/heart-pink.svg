@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <path d="M50 85 C50 85 10 58 10 33 C10 20 20 10 33 10 C40 10 47 14 50 20 C53 14 60 10 67 10 C80 10 90 20 90 33 C90 58 50 85 50 85Z" fill="#FF4D94" />
+  <!-- Shine highlight -->
+  <ellipse cx="36" cy="30" rx="8" ry="5" fill="#FFB3D1" opacity="0.5" transform="rotate(-30 36 30)" />
+</svg>

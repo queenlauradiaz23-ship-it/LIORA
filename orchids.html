@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper.css">
+
+    <!--=============== SEARCH CSS ===============-->
+    <link rel="stylesheet" href="assets/css/search.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  
+
+  <title>Liora — Orchids Collection</title>
+</head>
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Fresh flowers for every special moment 🌷</span>
+        </div>
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list custom-nav">
+          <li class="nav__item brand-item">
+            <a href="index.html" class="nav__link brand-logo">LIORA</a>
+          </li>
+          <li class="nav__item">
+            <a href="flower.html" class="nav__link active-link">Flowers</a>
+          </li>
+          <li class="nav__item">
+            <a href="mother.html" class="nav__link">Mother's Day</a>
+          </li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">Birthday</a>
+          </li>
+       <li class="nav__item search-center">
+  <div class="header__search custom-search">
+    <input type="text" placeholder="Search flowers..." class="form__input search-input" />
+    <button class="search__btn">
+      <img src="assets/img/search.svg" alt="search icon" />
+    </button>
+
+    <div id="search-history" class="search-history-box"></div>  <!-- ✅ ADD THIS -->
+  </div>
+</li>
+          <li class="nav__item">
+            <a href="birthday.html" class="nav__link">New Year</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Valentine</a>
+          </li>
+          <li class="nav__item">
+            <a href="valentine.html" class="nav__link">Occasions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__user-actions">
+        <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/heart-pink.svg" alt="Wishlist" />
+        </a>
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/cart-pink.svg" alt="Cart" />
+        </a>
+        <a href="chatbot.html" class="header__action-btn" title="AI Assistant">
+          <img src="assets/img/robot-pink.svg" alt="AI Assistant" class="robot-icon" />
+        </a>
+
+        <div class="user-menu-container">
+          <a href="#" class="header__action-btn user-menu-btn" title="My Liora Menu">
+            <img src="assets/img/menu-pink.svg" alt="Menu" />
+          </a>
+          <div class="user-dropdown">
+            <ul>
+              <li><a href="login-register.html">🌸 Log In / Sign Up</a></li>
+              <li><a href="accounts.html">👤 My Account</a></li>
+              <li><a href="calendar.html">📅 Calendar & Schedule Delivery</a></li>
+              <li><a href="deliveryMap.html">📍 Locate My Delivery</a></li>
+              <li><a href="accounts.html">🎁 Flower Points & Rewards</a></li>
+              <li><a href="wishlist.html">❤️ My Wishlist</a></li>
+              <li><a href="cart.html">🛒 My Cart</a></li>
+              <li class="divider"></li>
+              <li><a href="flower.html">🌷 Browse All Flowers</a></li>
+              <li><a href="occasions.html">🎉 Special Occasions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== FLOWER TABS BAR ===============-->
+    <div class="flower-tabs-bar">
+      <div class="tab__btns flower-types-menu">
+        <a href="rose.html" class="tab__btn">Roses</a>
+        <a href="tulip.html" class="tab__btn">Tulips</a>
+        <a href="lily.html" class="tab__btn">Lilies</a>
+        <a href="orchids.html" class="tab__btn active-tab">Orchids</a>
+        <a href="sunflower.html" class="tab__btn">Sunflowers</a>
+        <a href="mixed_flower.html" class="tab__btn">Mixed Bouquets</a>
+        <a href="buttercup.html" class="tab__btn">Buttercup</a>
+        <a href="daisies.html" class="tab__btn">Daisies</a>
+        <a href="minirose.html" class="tab__btn">Mini Rose</a>
+        <a href="daffodils.html" class="tab__btn">Daffodils</a>
+       
+      </div>
+    </div>
+
+    <!--=============== ORCHIDS COLLECTION ===============-->
+    <section class="products container section--lg" style="padding-top: 1.5rem;">
+      <div class="section__header">
+        <h2 class="section__title"><span>Orchids</span> Collection</h2>
+      </div>
+
+      <div class="products__container grid">
+
+        <!-- Product 1 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=orchid-purple-majesty" class="product__images">
+              <img src="assets/img/items/orchids/orchid_1.jpg" alt="Purple Majesty Orchids" class="product__img default" />
+              <img src="assets/img/items/orchids/orchid_1.jpg" alt="Purple Majesty Orchids hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Premium</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Orchids</span>
+            <a href="details.html?id=orchid-purple-majesty"><h3 class="product__title">Purple Majesty Orchids</h3>
+              <p class="product__subtitle">گولی ئۆرکید مۆر شاهانە</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$58</span>
+              <span class="old__price">$72</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=orchid-pink-champagne" class="product__images">
+              <img src="assets/img/items/orchids/orchid_5.jpg" alt="Pink Champagne Orchids" class="product__img default" />
+              <img src="assets/img/items/orchids/orchid_5.jpg" alt="Pink Champagne Orchids hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-pink">Premium</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Orchids</span>
+            <a href="details.html?id=orchid-pink-champagne"><h3 class="product__title">Pink Champagne Orchids</h3>
+              <p class="product__subtitle">گولی ئۆرکید پینکی شەمپاین</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$70</span>
+              <span class="old__price">$85</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=orchid-sunset-coral" class="product__images">
+              <img src="assets/img/items/orchids/orchid_6.jpg" alt="Sunset Coral Orchids" class="product__img default" />
+              <img src="assets/img/items/orchids/orchid_6.jpg" alt="Sunset Coral Orchids hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-orange">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Orchids</span>
+            <a href="details.html?id=orchid-sunset-coral"><h3 class="product__title">Sunset Coral Orchids</h3>
+              <p class="product__subtitle">گولی ئۆرکید کۆرالی غرووبی خۆر</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$60</span>
+              <span class="old__price">$75</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=orchid-pink-cascade" class="product__images">
+              <img src="assets/img/items/orchids/orchid_7.jpg" alt="Pink Cascade Orchids" class="product__img default" />
+              <img src="assets/img/items/orchids/orchid_7.jpg" alt="Pink Cascade Orchids hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-green">New</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Orchids</span>
+            <a href="details.html?id=orchid-pink-cascade"><h3 class="product__title">Pink Cascade Orchids</h3>
+              <p class="product__subtitle">گولی ئۆرکید پینکی کاسکید</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$52</span>
+              <span class="old__price">$65</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=orchid-golden-sunrise" class="product__images">
+              <img src="assets/img/items/orchids/orchid_9.jpg" alt="Golden Sunrise Orchids" class="product__img default" />
+              <img src="assets/img/items/orchids/orchid_9.jpg" alt="Golden Sunrise Orchids hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-orange">-15%</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Orchids</span>
+            <a href="details.html?id=orchid-golden-sunrise"><h3 class="product__title">Golden Sunrise Orchids</h3>
+              <p class="product__subtitle">گولی ئۆرکید زێڕینی هەڵاتنی خۆر</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$48</span>
+              <span class="old__price">$58</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product__item">
+          <div class="product__banner">
+            <a href="details.html?id=orchid-ocean-breeze" class="product__images">
+              <img src="assets/img/items/orchids/orchid_10.jpg" alt="Ocean Breeze Blue Orchids" class="product__img default" />
+              <img src="assets/img/items/orchids/orchid_10.jpg" alt="Ocean Breeze Blue Orchids hover" class="product__img hover" />
+            </a>
+            <div class="product__actions">
+              <a href="#" class="action__btn" aria-label="Add to Wishlist"><i class="fi fi-rs-heart"></i></a>
+              <a href="#" class="action__btn share__btn" aria-label="Share"><i class="fi fi-rs-share"></i></a>
+            <div class="share-menu">
+              <a class="share-link fb">Facebook</a>
+              <a class="share-link wa">WhatsApp</a>
+              <a class="share-link tg">Telegram</a>
+            </div>
+            </div>
+            <div class="product__badge light-blue">Hot</div>
+          </div>
+          <div class="product__content">
+            <span class="product__category">Orchids</span>
+            <a href="details.html?id=orchid-ocean-breeze"><h3 class="product__title">Ocean Breeze Blue Orchids</h3>
+              <p class="product__subtitle">گولی ئۆرکید شینی نسیمی ئۆقیانوس</p></a>
+            <div class="product__price flex">
+              <span class="new__price">$72</span>
+              <span class="old__price">$88</span>
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Add To Cart"><i class="fi fi-rs-shopping-bag-add"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper.js"></script>
+  <!--=============== SEARCH JS ===============-->
+  <script src="assets/js/search.js"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/orchids.js"></script>
+   
+
+</body>
+</html>
+
+
